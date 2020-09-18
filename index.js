@@ -14,7 +14,7 @@ const toCelsius = (temp) => {
 const getWeather = (position) => {
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=9473b08a5ce2f2071235d0c9469aff71`).then(response => response.json()).then(data => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=9473b08a5ce2f2071235d0c9469aff71`).then(response => response.json()).then(data => {
         console.log(data);
         weatherImg.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         temp.textContent = toCelsius(data.main.temp);
