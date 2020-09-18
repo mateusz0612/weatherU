@@ -32,7 +32,7 @@ header {
     height: 128px;
 }
 
-.tempreture {
+.temperature {
     font-size: 10rem;
     margin-top: -20px;
 }
@@ -50,4 +50,27 @@ header {
     text-transform: uppercase;
     margin-top: 0px;
     font-size: 3rem;
+}
+
+.more-info {
+    margin-top: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more-info h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.more-info p {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.more-info p i {
+    font-size: 2rem;
+    margin-right: 10px;
 }
