@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #406E8E;
+}
+
+header {
+    line-height: 15vh;
+    text-align: center;
+    font-size: 2rem;
+    color: #161925;
+}
+
+.main-section {
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFF0;
+}
+
+.weather-image {
+    width: 128px;
+    height: 128px;
+}
+
+.tempreture {
+    font-size: 10rem;
+    margin-top: -20px;
+}
+
+.celsius {
+    font-size: 8rem;
+}
+
+.location {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.weather-type {
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-size: 3rem;
+}
