@@ -7,6 +7,10 @@ const feelsLike = document.querySelector('.feels-like');
 const tempMax = document.querySelector('.temp-max');
 const tempMin = document.querySelector('.temp-min');
 
+const options = {
+    enableHighAccuracy: true
+}
+
 const toCelsius = (temp) => {
     return (temp - 273.15).toFixed(0);
 };
@@ -32,7 +36,7 @@ const locationError = () => {
 
 window.addEventListener('load', () => {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(getWeather, locationError);
+        navigator.geolocation.getCurrentPosition(getWeather, locationError, options);
     } else {
         console.log('Geolocation is not supported by your browser');
     }
